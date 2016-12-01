@@ -1,0 +1,22 @@
+{
+  "name": "node-project",
+  "version": "0.0.1",
+  "description": "this is a node project fo node.js training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capfish-yjy/node-project.git"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "Jingyang Yu <Capfish@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/capfish-yjy/node-project/issues"
+  },
+  "homepage": "https://github.com/capfish-yjy/node-project#readme"
+}
