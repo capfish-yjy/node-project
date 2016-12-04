@@ -4,7 +4,11 @@
   "description": "this is a node project fo node.js training",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm run clean && babel src -d target --watch",
+    "compile": "npm run clean && babel src -d target",
+    "clean": "del /q target\\*",
+    "dev": "export NODE_ENV=dev && export DEBUG='my:*' && node target/server.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +22,19 @@
   "bugs": {
     "url": "https://github.com/capfish-yjy/node-project/issues"
   },
-  "homepage": "https://github.com/capfish-yjy/node-project#readme"
+  "homepage": "https://github.com/capfish-yjy/node-project#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015-node4": "^2.1.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "project-core": "^2.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "debug": "^2.3.3",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.1",
+    "multiparty": "^4.1.2",
+    "serve-static": "^1.11.1"
+  }
 }
